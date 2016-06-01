@@ -4,21 +4,20 @@ body {
   font-family: 'Lato', sans-serif;
   display: flex;
   flex-direction: column;
-  align-items: center;
   color: hsl(40,10%,5%);
+  margin: 0;
+  text-align: center;
 }
 
 header {
+  display: inline-block;
   border-bottom: 2px solid #000;
-  margin-left: 15vw;
-  margin-right: 15vw;
 }
 
 h1,
 h2,
 h4 {
   font-weight: 300;
-  text-align: center;
 }
 
 h1 {
@@ -51,10 +50,19 @@ a:active {
 
 .nav,
 #issue-desc {
+  text-transform: uppercase;
+}
+
+.nav,
+#issue-desc {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-transform: uppercase;
+}
+
+#main {
+  max-width: 967px;
+  margin: 0 auto;
 }
 
 #nav-menu-ul {
@@ -71,13 +79,14 @@ a:active {
   margin-bottom: 1em;
   margin-left: auto;
   margin-right: auto;
-  background-image: url(../../public/images/kings.jpeg);
+  background-image: url(/images/kings.jpeg);
   background-color: hsla(40,10%,50%,0.5);
   background-blend-mode: color-burn;
   height: 75vh;
   background-position: center;
   background-size: cover;
   color: white;
+  flex-basis: 1;
 }
 
 #issue-desc span {
@@ -91,6 +100,9 @@ a:active {
   justify-content: space-around;
   flex-wrap: wrap;
   max-width: 90vw;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 
 .nav-ul li {
@@ -120,6 +132,7 @@ a:active {
 }
 
 .item {
+  text-align: left;
   max-width: 600px;
   padding: 5% 5%;
   border-top: 1px solid #ccc;
@@ -173,7 +186,8 @@ a:active {
 }
 
 footer {
-  text-align: center;
+  display: flex;
+  justify-content: center;
   width: 100%;
   border-top: 1px solid #000;
   background-color: hsl(40,10%,10%);
@@ -187,7 +201,14 @@ footer {
 @media screen and (max-width: 640px) {
 
   h1 {
-    font-size: 3.5em;
+    font-size: 3em;
+    letter-spacing: 0.3em;
+    padding: 0 0 0 0.3em;
+  }
+  
+  h4 {
+    font-size: 1em;
+    margin-top: 0.3em;
   }
 
   .last-img {
