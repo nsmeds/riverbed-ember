@@ -215,6 +215,46 @@ a:active {
   text-align: left;
 }
 
+/**** Form Styles ****/
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin: 2em auto;
+/*  max-width: 20em;*/
+  padding: 1em;
+/*  border: 1px solid white;*/
+}
+
+.form input,
+.form textarea {
+  align-self: flex-start;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-weight: 300;
+  width: 15em;
+}
+
+.form textarea {
+  height: 8em;
+  width: 20em;
+}
+
+.form .button {
+  color: inherit;
+  background-color: hsla(0,100%,100%,0);
+  border-radius: 3px;
+  font-weight: 400;
+  border: 1px solid #fff;
+  width: auto;
+}
+
+.button:active {
+  background-color: hsla(0,100%,100%,0.3);
+  border-color: transparent;
+  box-shadow: inset 1 5px 5px -5px hsla(190,10%,10%,1);
+}
+
 /**** Footer Styles ****/
 
 #sub-footer {
