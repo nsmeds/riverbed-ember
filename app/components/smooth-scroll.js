@@ -1,6 +1,6 @@
 import Ember from 'ember';
 
-export default Ember.Route.extend({
+export default Ember.Component.extend({
     actions: {
     smoothScroll() {(function (root, factory) {
 	if ( typeof define === 'function' && define.amd ) {
@@ -513,3 +513,4 @@ export default Ember.Route.extend({
     }
   }
 });
+

@@ -7,6 +7,11 @@ body {
   color: hsl(40,10%,20%);
   margin: 0;
   text-align: center;
+  scroll-behavior: smooth;
+}
+
+#main {
+  scroll-behavior: smooth;
 }
 
 header {
@@ -69,6 +74,7 @@ a:active {
 #nav-menu-ul {
   font-weight: 300;
   font-size: 0.8em;
+  margin-top: 0.5em;
 }
 
 #nav-menu-ul li {
@@ -76,10 +82,7 @@ a:active {
 }
 
 #issue-desc {
-  margin-top: 1em;
-  margin-bottom: 1em;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0.5em auto 2em auto;
   background-image: url(/images/kings.jpeg);
   background-color: hsla(40,10%,50%,0.5);
   background-blend-mode: color-burn;
@@ -184,7 +187,7 @@ a:active {
   border: 1px solid #fff;
   max-width: 600px;
   padding: 0 2em 4em 2em;
-  margin: 1em auto 2em auto;
+  margin: 0.5em auto 2em auto;
   background-image: url(/images/canoe.jpg);
   background-color: hsla(40,10%,10%,0.5);
   background-blend-mode: color-burn;
@@ -220,7 +223,8 @@ a:active {
 .form {
   display: flex;
   flex-direction: column;
-  margin: 2em auto;
+/*  margin: 2em auto;*/
+
 /*  max-width: 20em;*/
   padding: 1em;
 /*  border: 1px solid white;*/
@@ -228,11 +232,11 @@ a:active {
 
 .form input,
 .form textarea {
-  align-self: flex-start;
+  align-self: center;
   margin-top: 5px;
   margin-bottom: 5px;
   font-weight: 300;
-  width: 15em;
+  width: 20em;
 }
 
 .form textarea {
