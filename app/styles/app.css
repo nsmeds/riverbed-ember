@@ -171,10 +171,11 @@ a:active {
   min-height: 78vh;
 }
 
-#up-button {
+.scrollToTop {
+  display: none;
   position: fixed;
   right: 50%;
-  bottom: -5px;
+  bottom: 32px;
   z-index: 999;
   overflow: hidden;
 }

@@ -1,8 +1,4 @@
-import Ember from 'ember';
-
-export default Ember.Component.extend({
-    actions: {
-    smoothScroll() {(function (root, factory) {
+(function (root, factory) {
 	if ( typeof define === 'function' && define.amd ) {
 		define([], factory(root));
 	} else if ( typeof exports === 'object' ) {
@@ -510,7 +506,4 @@ export default Ember.Component.extend({
 
 });
 
-    }
-  }
-});
-
+smoothScroll.init();
