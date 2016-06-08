@@ -29,4 +29,4 @@ export default function(){
       this.use('crossFade'),
       this.reverse('crossFade')
   );  
-};
+}
