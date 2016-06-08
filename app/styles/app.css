@@ -192,10 +192,11 @@ a:active {
   padding: 0 2em 4em 2em;
   margin: 0.5em auto 2em auto;
   background-image: url(/images/canoe.jpg);
-  background-color: hsla(40,10%,0%,0.5);
-  background-blend-mode: overlay;
+  background-color: hsla(40,10%,30%,0.9);
+  background-blend-mode: color-burn;
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .menu-item h2 {
@@ -226,11 +227,7 @@ a:active {
 .form {
   display: flex;
   flex-direction: column;
-/*  margin: 2em auto;*/
-
-/*  max-width: 20em;*/
   padding: 1em;
-/*  border: 1px solid white;*/
 }
 
 .form input,
@@ -244,7 +241,6 @@ a:active {
 
 .form textarea {
   height: 8em;
-  width: 20em;
 }
 
 .form .button {
@@ -275,7 +271,6 @@ footer {
   width: 100%;
   border-top: 1px solid #000;
   background-color: hsl(40,10%,10%);
-  background-blend-mode: overlay;
   background-position: top;
   color: #fff;
 }
@@ -308,5 +303,12 @@ footer {
   h4 {
     font-size: 1em;
     margin-top: 0.3em;
+  }
+  
+  .form input,
+  .form textarea {
+    width: 13em;
+    align-self: flex-start;
+    padding: 2px;
   }
 }
