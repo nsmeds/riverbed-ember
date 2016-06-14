@@ -1,8 +1,8 @@
 <h2>Contact Us</h2>
 <p>If you'd like to drop us a note about the magazine, website or anything else, you can do so below. To have your work considered for publication, {{#link-to 'menu.submit'}}click here{{/link-to}}.</p>
-<div class='form'>
+<form class="form" action='mailto:niilosmeds@gmail.com' method='post' enctype='multipart/form-data' name='EmailTestForm'>
 {{input type='name' placeholder='Your name' name='name'}}
 {{input type='email' placeholder='Your email' name='email'}}
 {{textarea name='message' placeholder='Your message'}}
-{{input type='submit' name='Send email' class='button'}}
-</div>
+{{input type='submit' value='Send' name='Send email' class='button'}}
+</form>
