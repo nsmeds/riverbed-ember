@@ -14,7 +14,7 @@ module.exports = function(environment) {
     },    
     
     googleFonts: [
-      'Lato:100,300,400'
+      'Lato:100,300,300italic,400'
     ],
 
     // Set or update content security policies

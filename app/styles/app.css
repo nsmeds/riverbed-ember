@@ -21,7 +21,8 @@ header {
 
 h1,
 h2,
-h4 {
+h4,
+figure {
   font-weight: 300;
 }
 
@@ -50,6 +51,23 @@ a:hover {
 
 a:active {
   opacity: 0.3;
+}
+
+figure {
+  margin-bottom: 2em;
+}
+
+figcaption {
+  font-size: 0.9em;
+  text-align: right;
+  margin-right: 60px;
+}
+
+blockquote {
+  font-style: italic;
+  text-align: left;
+  font-size: 1em;
+  margin-bottom: 0.2em;
 }
 
 /**** Nav/Menu Styles ****/
@@ -187,7 +205,6 @@ a:active {
 .menu-item {
   color: #fff;
   height: 70vh;
-  border: 1px solid #fff;
   max-width: 600px;
   padding: 0 2em 4em 2em;
   margin: 0.5em auto 2em auto;
@@ -209,8 +226,7 @@ a:active {
   padding: 0.2em 0.2em 0.2em 0.3em;
 }
 
-.menu-item p,
-.menu-item ul {
+.p-wrap {
   border: 1px solid white;
   font-weight: 300;
   max-width: 480px;
@@ -220,6 +236,8 @@ a:active {
 
 .menu-item p {
   text-align: left;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
 }
 
 /**** Form Styles ****/
