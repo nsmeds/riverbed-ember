@@ -1,11 +1,11 @@
 <h2>Contact Us</h2>
-<div class="p-wrap">
+<div class='p-wrap'>
   <p>If you'd like to drop us a note about the magazine, website or anything else, you can do so below. To have your work considered for publication, {{#link-to 'menu.submit'}}click here{{/link-to}}.</p>
-  <form class="form" {{action 'mail-script' post}} enctype='multipart/form-data' name='EmailTestForm'>
+  <form class='form' {{action 'mail-script' post}} enctype='multipart/form-data' name='EmailTestForm'>
   {{input type='name' placeholder='Your name' name='name' class='name-input'}}
   {{input type='email' placeholder='Your email' name='email' class='email-input'}}
   {{textarea name='message' placeholder='Your message' class='message-input'}}
   {{input type='submit' value='Send' name='Send email' class='button'}}
-  <div class="form-messages"></div>
+  <div class='form-messages'></div>
   </form>
 </div>
